@@ -1,0 +1,31 @@
+.about {
+    margin: 200px auto 200px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; // .about__description
+
+    &__description {
+        max-width: 630px;
+        // .about__description_title
+
+        &_title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 140%;
+            color: #FFFFFF;
+        }
+
+        // .about__description_descr
+
+        &_descr {
+            margin-top: 45px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 160%;
+            color: #FFFFFF;
+        }
+    }
+}

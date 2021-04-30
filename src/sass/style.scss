@@ -1,0 +1,23 @@
+@import 'libs/bootstrap-reboot.min';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/bgc.png) center (center/cover) repeat;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/quickly';
+@import 'blocks/getProfession';
+@import 'blocks/partners';
