@@ -1,7 +1,7 @@
 "use strict";
 
 
-const deadline = '2021-03-30';
+const deadline = '2021-05-30';
 
 function getTimerRemaining(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date());
