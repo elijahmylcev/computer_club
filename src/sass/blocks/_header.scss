@@ -30,6 +30,7 @@ header {
                 text-align: center;
 
                 color: #FFFFFF;
+
                 &:hover {
                     transition: all .4s;
                     display: block;
@@ -59,16 +60,10 @@ header {
         line-height: 150%;
         text-align: center;
         color: #FFFFFF;
+        transition: all .3s;
 
         &:hover {
-            transition: all .3s;
-            background: #451046;
-            color: #fff;
-            // border-radius: 5px;
-            box-shadow: 0 0 5px #DF5950,
-                0 0 25px #DF5950,
-                0 0 50px #451046,
-                0 0 100px #451046;
+            box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
         }
     }
 }
@@ -151,16 +146,12 @@ h1 {
         line-height: 150%;
         text-align: center;
         color: #FFFFFF;
+        transition: all .3s;
 
         &:hover {
-            transition: all .3s;
-            background: #451046;
-            color: #fff;
+            background: none;
+            box-shadow: 0 0 10px 0 #DF5950 inset, 0 0 10px 4px #451046;
             // border-radius: 5px;
-            box-shadow: 0 0 5px #DF5950,
-                0 0 25px #DF5950,
-                0 0 50px #451046,
-                0 0 100px #451046;
         }
     }
 

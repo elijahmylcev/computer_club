@@ -1,0 +1,93 @@
+.teachers {
+    // .teachers__title
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-top: 170px;
+
+        // .teachers__title_icon
+
+        &_icon {
+            transform: rotateZ(135deg);
+            margin-right: 20px;
+        }
+
+        // .teachers__title_descr
+
+        &_descr {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 140%;
+            /* or 67px */
+            color: #FFFFFF;
+        }
+    }
+
+    // .teachers__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 113px;
+        // .teachers__wrapper_item
+
+        &_item {
+            min-width: 320px;
+            text-align: center;
+        }
+    }
+}
+
+.guru {
+
+    // .guru__name
+
+    &__name {
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        /* identical to box height, or 34px */
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    // .guru__descr
+
+    &__descr {
+        margin-top: 15px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        /* identical to box height, or 26px */
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.8;
+    }
+
+    // .guru__btn
+
+    &__btn {
+        border: 1px solid #FFFFFF;
+        border-radius: 50px;
+        margin: 30px auto 0 auto;
+        //text
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+        // align-items: center;
+        padding: 10px 30px;
+        color: #FFFFFF;
+        background: none;
+        transition: all .4s;
+        // box-shadow: 0 0 40px 40px #fff inset, 0 0 0 0 #fff;
+
+        &:hover {
+            box-shadow: 0 0 10px 0 #fff inset, 0 0 10px 4px #fff;
+        }
+
+    }
+}
