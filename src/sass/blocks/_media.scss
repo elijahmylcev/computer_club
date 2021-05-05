@@ -1,0 +1,126 @@
+@media (max-width: 1199px) {
+
+    .container {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    header {
+        .wrapperNav {
+            &__menu {
+                min-width: 700px;
+
+                &_item>a {
+                    font-size: 14px;
+                }
+            }
+
+            &__btn {
+                font-size: 13px;
+            }
+        }
+
+        h1 {
+            font-size: 58px;
+        }
+
+        .timer {
+            &__item {
+                &_ind {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .headFooter {
+            &__money {
+                &_line {
+                    width: 580px;
+                }
+
+                &_gradation {
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            &__btn {
+                width: 155px;
+                font-size: 14px;
+            }
+
+            .statistic {
+                &__item {
+                    font-size: 14px;
+                }
+
+                &__num {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .about {
+        margin: 135px auto;
+
+        &__img {
+            width: 425px;
+        }
+
+        &__description {
+            &_title {
+                font-size: 40px;
+            }
+
+            &_descr {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .quickly {
+        &__wrappTitle {
+            font-size: 40px;
+
+            &_icon {
+                width: 100px;
+            }
+        }
+
+        &__descr {
+            font-size: 14px;
+            margin-top: 30px;
+            margin-bottom: 54px;
+        }
+
+        &__wrapper {
+            margin: 0 auto;
+
+            .proportion {
+                width: 250px;
+
+                &__title {
+                    font-size: 30px;
+                }
+
+                &__descr {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // .getProfession {
+
+    // }
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}
