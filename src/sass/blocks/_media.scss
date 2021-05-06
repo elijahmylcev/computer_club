@@ -11,17 +11,17 @@
                 min-width: 700px;
 
                 &_item>a {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
 
             &__btn {
-                font-size: 13px;
+                font-size: 12px;
             }
         }
 
         h1 {
-            font-size: 58px;
+            font-size: 46px;
         }
 
         .timer {
@@ -35,7 +35,7 @@
         .headFooter {
             &__money {
                 &_line {
-                    width: 580px;
+                    width: 390px;
                 }
 
                 &_gradation {
@@ -47,16 +47,16 @@
 
             &__btn {
                 width: 155px;
-                font-size: 14px;
+                font-size: 12px;
             }
 
             .statistic {
                 &__item {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
 
                 &__num {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
         }
@@ -66,23 +66,27 @@
         margin: 135px auto;
 
         &__img {
-            width: 425px;
+            width: 360px;
         }
 
         &__description {
+            max-width: 525px;
+
             &_title {
-                font-size: 40px;
+                font-size: 36px;
             }
 
             &_descr {
-                font-size: 14px;
+                font-size: 12px;
             }
         }
     }
 
     .quickly {
         &__wrappTitle {
-            font-size: 40px;
+            &_title {
+                font-size: 36px;
+            }
 
             &_icon {
                 width: 100px;
@@ -90,7 +94,283 @@
         }
 
         &__descr {
+            font-size: 12px;
+            margin-top: 30px;
+            margin-bottom: 54px;
+        }
+
+        &__wrapper {
+            margin: 0 auto;
+
+            .proportion {
+                width: 250px;
+
+                &__title {
+                    font-size: 24px;
+                }
+
+                &__descr {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+
+    .getProfession {
+        margin: 110px auto;
+
+        &__title {
+            font-size: 36px;
+        }
+
+        &__wrapper {
+            margin-top: 80px;
+
+            .getItem {
+                width: 290px;
+
+                &__img {
+                    width: 90px;
+                }
+
+                &__title {
+                    font-size: 16px;
+                }
+
+                &__descr {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .partners {
+        margin-bottom: 90px;
+
+        &__title {
+            &_logo {
+                width: 90px;
+            }
+
+            &_text {
+                font-size: 36px;
+            }
+        }
+
+        &__logo {
+            &_item {
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    .trainingProgram {
+        &__icon {
+            img {
+                width: 90px;
+            }
+        }
+
+        &__title {
+            font-size: 36px;
+        }
+
+        &__subtitle {
             font-size: 14px;
+        }
+
+        &__wrapper {
+            &_item {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .teachers {
+        &__title {
+            margin-top: 120px;
+
+            &_icon {
+                img {
+                    width: 90px;
+                }
+            }
+
+            &_descr {
+                font-size: 36px;
+            }
+        }
+
+        &__wrapper {
+            margin-top: 75px;
+
+            &_item {
+                img {
+                    width: 170px;
+                }
+            }
+
+            .guru {
+                &__name {
+                    font-size: 20px;
+                }
+
+                &__descr {
+                    font-size: 14px;
+                }
+
+                &__btn {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 100px;
+
+        .title {
+            font-size: 36px;
+        }
+
+        .descr {
+            font-size: 14px;
+        }
+
+        .form {
+            input[type='email'] {
+                width: 420px;
+                font-size: 14px;
+            }
+
+            input[type='submit'] {
+                font-size: 14px;
+            }
+        }
+
+        .copy {
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    header {
+        .wrapperNav {
+            min-width: 730px;
+
+            &__logo {
+                img {
+                    width: 40px;
+                }
+            }
+
+            &__menu {
+                min-width: 520px;
+
+                &_item>a {
+                    font-size: 12px;
+                }
+            }
+
+            &__btn {
+                font-size: 12px;
+                padding: 7px;
+            }
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 140px;
+        }
+
+        .timer {
+            &__item {
+                &_ind {
+                    font-size: 28px;
+                }
+            }
+        }
+
+        .wrapperFooter {
+            margin-top: 140px;
+        }
+
+        .headFooter {
+            &__stat {
+                &_item {
+                    width: 200px;
+                }
+            }
+
+            &__money {
+                &_line {
+                    width: 315px;
+                }
+
+                &_gradation {
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            &__btn {
+                width: 122px;
+                height: 36px;
+                font-size: 12px;
+            }
+
+            .statistic {
+                &__item {
+                    font-size: 12px;
+                }
+
+                &__num {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .about {
+        margin: 100px auto;
+
+        &__img {
+            width: 300px;
+        }
+
+        &__description {
+            max-width: 370px;
+
+            &_title {
+                font-size: 30px;
+            }
+
+            &_descr {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .quickly {
+        &__wrappTitle {
+            &_title {
+                font-size: 30px;
+            }
+
+            &_icon {
+                width: 85px;
+            }
+        }
+
+        &__descr {
+            font-size: 12px;
             margin-top: 30px;
             margin-bottom: 54px;
         }
@@ -106,18 +386,158 @@
                 }
 
                 &__descr {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
             }
         }
     }
 
-    // .getProfession {
 
-    // }
+    .getProfession {
+        margin: 100px auto;
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__wrapper {
+            margin-top: 70px;
+
+            .getItem {
+                width: 290px;
+
+                &__img {
+                    width: 90px;
+                }
+
+                &__title {
+                    margin-top: 35px;
+                    font-size: 14px;
+                }
+
+                &__descr {
+                    margin-top: 25px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .partners {
+        margin-bottom: 90px;
+
+        &__title {
+            &_logo {
+                width: 80px;
+            }
+
+            &_text {
+                font-size: 30px;
+            }
+        }
+
+        &__logo {
+            &_item {
+                img {
+                    width: 110px;
+                }
+            }
+        }
+    }
+
+    .trainingProgram {
+        &__icon {
+            img {
+                width: 80px;
+            }
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+        }
+
+        &__wrapper {
+            &_item {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .teachers {
+        &__title {
+            margin-top: 100px;
+
+            &_icon {
+                img {
+                    width: 80px;
+                }
+            }
+
+            &_descr {
+                font-size: 30px;
+            }
+        }
+
+        &__wrapper {
+            margin-top: 75px;
+
+            &_item {
+                img {
+                    width: 150px;
+                }
+            }
+
+            .guru {
+                &__name {
+                    margin-top: 24px;
+                    font-size: 16px;
+                }
+
+                &__descr {
+                    font-size: 12px;
+                }
+
+                &__btn {
+                    margin-top: 18px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 85px;
+
+        .title {
+            font-size: 30px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+        }
+
+        .form {
+            input[type='email'] {
+                width: 420px;
+                font-size: 12px;
+            }
+
+            input[type='submit'] {
+                font-size: 12px;
+            }
+        }
+
+        .copy {
+            font-size: 12px;
+        }
+    }
+
 }
 
-@media (max-width: 991px) {}
 
 @media (max-width: 767px) {}
 
