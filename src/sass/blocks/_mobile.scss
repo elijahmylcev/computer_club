@@ -1,0 +1,29 @@
+.mobile {
+	z-index: 1000;
+	display: none;
+	justify-content: end;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+
+	// .mobile__menu
+	&__menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.9);
+
+		// .mobile__menu_item
+		&_item {
+			list-style-type: none;
+			& > a {
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
+}
