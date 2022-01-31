@@ -1,20 +1,20 @@
 @import 'libs/bootstrap-reboot.min';
 
 * {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    background: url(../img/bgc.png) center (center/cover) repeat;
+	background: url(../img/bgc.png) center (center/cover) repeat;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1300px;
+	margin: 0 auto;
+	max-width: 1200px;
 }
-
 
 @import 'blocks/header';
 @import 'blocks/about';
