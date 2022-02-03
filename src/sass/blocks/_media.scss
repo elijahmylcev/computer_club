@@ -258,7 +258,7 @@
 @media (max-width: 991px) {
 	header {
 		.wrapperNav {
-			min-width: 730px;
+			width: 100%;
 
 			&__logo {
 				img {
@@ -287,6 +287,10 @@
 
 		.timer {
 			&__item {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
 				&_ind {
 					font-size: 28px;
 				}
@@ -567,11 +571,10 @@
 
 		.timer {
 			justify-content: start;
+			width: 100%;
 			column-gap: 15px;
 
 			&__item {
-				width: 35px;
-				height: 35px;
 				padding: 4px;
 
 				&_ind {
@@ -812,6 +815,7 @@
 		&__subtitle {
 			margin-top: 10px;
 			font-size: 10px;
+			width: 100%;
 		}
 
 		&__wrapper {
@@ -876,7 +880,7 @@
 		}
 
 		&__wrapper {
-			margin-top: 75px;
+			margin-top: 45px;
 			flex-direction: column;
 			row-gap: 10px;
 			&_item {
@@ -1045,5 +1049,38 @@
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
+	header {
+		h1 {
+			font-size: 20px;
+			margin-top: 33px;
+		}
+
+		.wrapperNav {
+			padding-left: 15px;
+			&__logo {
+				width: 30px;
+				height: 30px;
+			}
+		}
+		.timer {
+			justify-content: start;
+			width: 100%;
+			column-gap: 15px;
+
+			&__item {
+				width: 50px;
+				height: 50px;
+			}
+		}
+		.wrapperFooter {
+			.headFooter {
+				&__money {
+					&_line {
+						width: 200px;
+					}
+				}
+			}
+		}
+	}
 }
