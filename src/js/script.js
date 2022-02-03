@@ -1,13 +1,22 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
-	const menu = document.querySelector('.mobile'),
-		menuItem = document.querySelectorAll('.mobile__menu_item'),
-		hamburger = document.querySelector('.hamburger');
+	const menu = document.querySelector('.mobile');
+	const menuItem = document.querySelectorAll('.mobile__menu_item');
+	const hamburger = document.querySelector('.hamburger');
+	const body = document.querySelector('body');
 
 	hamburger.addEventListener('click', () => {
 		hamburger.classList.toggle('hamburger_active');
 		menu.classList.toggle('mobile_active');
+		body.style.overflow = 'hidden';
+	});
+
+	menu.addEventListener('click', e => {
+		if (e.target === menu) {
+			menu.classList.toggle('mobile_active');
+			body.style.overflow = 'auto';
+		}
 	});
 
 	menuItem.forEach(item => {

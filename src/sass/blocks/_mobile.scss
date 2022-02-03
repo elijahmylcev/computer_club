@@ -9,22 +9,40 @@
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.6);
 
+	&_active {
+		display: flex;
+	}
+
 	// .mobile__menu
 	&__menu {
+		padding: 0 15px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin-bottom: 0;
 		background-color: rgba(0, 0, 0, 0.9);
 
 		// .mobile__menu_item
 		&_item {
 			list-style-type: none;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&:hover {
+				transform: scale(1.2);
+			}
 			& > a {
 				text-decoration: none;
 				color: #fff;
 			}
 		}
+	}
+
+	span {
+		color: #000;
+		font-size: 30px;
 	}
 }
 
