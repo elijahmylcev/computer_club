@@ -30,6 +30,24 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
+// scroll
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+anchors.forEach(anchor => {
+	anchor.addEventListener('click', e => {
+		e.preventDefault();
+
+		const blockID = anchor.getAttribute('href').substr(1);
+		document.getElementById(blockID).scrollIntoView({
+			behavior: 'smooth',
+			block: 'start',
+		});
+	});
+});
+
+//timer
+
 const deadline = '2022-02-28';
 
 function getTimerRemaining(endtime) {
