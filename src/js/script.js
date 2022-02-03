@@ -15,6 +15,8 @@ window.addEventListener('DOMContentLoaded', () => {
 	menu.addEventListener('click', e => {
 		if (e.target === menu) {
 			menu.classList.toggle('mobile_active');
+			hamburger.classList.toggle('hamburger_active');
+
 			body.style.overflow = 'auto';
 		}
 	});
@@ -23,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		item.addEventListener('click', () => {
 			hamburger.classList.toggle('hamburger_active');
 			menu.classList.toggle('mobile_active');
+			body.style.overflow = 'auto';
 		});
 	});
 });

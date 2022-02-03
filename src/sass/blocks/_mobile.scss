@@ -1,5 +1,5 @@
 .mobile {
-	z-index: 1000;
+	z-index: 100;
 	display: none;
 	justify-content: end;
 	top: 0;
@@ -61,8 +61,26 @@
 		width: 30px;
 		background-color: #fff;
 		border-radius: 5px;
+		transition: all 0.5s ease;
+
 		&:last-child {
 			margin-bottom: 0;
+		}
+	}
+	&_active {
+		z-index: 101;
+
+		span {
+			margin-bottom: -2px;
+			&:nth-child(1) {
+				transform: translateY(3px) rotate(-45deg);
+			}
+			&:nth-child(2) {
+				display: none;
+			}
+			&:nth-child(3) {
+				transform: translateY(3px) rotate(45deg);
+			}
 		}
 	}
 }
