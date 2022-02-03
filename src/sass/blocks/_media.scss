@@ -1083,4 +1083,9 @@
 			}
 		}
 	}
+	.partners {
+		&__logo {
+			grid-template-columns: 1fr;
+		}
+	}
 }
