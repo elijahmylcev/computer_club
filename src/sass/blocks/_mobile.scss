@@ -27,3 +27,24 @@
 		}
 	}
 }
+
+.hamburger {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	span {
+		margin-bottom: 5px;
+		display: block;
+		height: 2px;
+		width: 30px;
+		background-color: #fff;
+		border-radius: 5px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
