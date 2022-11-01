@@ -51,7 +51,7 @@ anchors.forEach(anchor => {
 
 //timer
 
-const deadline = '2022-04-20';
+const deadline = '2022-12-23';
 
 function getTimerRemaining(endtime) {
 	const t = Date.parse(endtime) - Date.parse(new Date());
