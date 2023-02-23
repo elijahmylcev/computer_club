@@ -51,10 +51,12 @@ anchors.forEach(anchor => {
 
 //timer
 
-const deadline = '2022-12-23';
+// const deadline = '2022-12-23';
+const deadline = Date.now() + 1000000300;
 
-function getTimerRemaining(endtime) {
-	const t = Date.parse(endtime) - Date.parse(new Date());
+function getTimerRemaining(endTime) {
+	// const t = Date.parse(endTime) - Date.parse(new Date());
+	const t = endTime - Date.parse(new Date());
 	const days = Math.floor(t / (1000 * 60 * 60 * 24));
 	const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
 	const minutes = Math.floor((t / (1000 * 60)) % 60);
